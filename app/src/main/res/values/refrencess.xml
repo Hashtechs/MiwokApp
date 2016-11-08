@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--LESSON 3 REFERENCES :-->
+
+    <!--Styles :-->
+    <!--https://developer.android.com/guide/topics/ui/themes.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics-->
+
+    <!--Theme :-->
+    <!--https://developer.android.com/training/material/theme.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics-->
+
+    <!--Manifest :-->
+    <!--https://developer.android.com/guide/topics/manifest/manifest-intro.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics-->
+
+    <!--Style And Theme Tutorial :-->
+    <!--https://www.tutorialspoint.com/android/android_styles_and_themes.htm-->
+
+    <!--Support Library :-->
+    <!--https://developer.android.com/training/material/compatibility.html-->
+
+    <!--Color Palette-->
+    <!--https://material.google.com/style/color.html-->
+
+    <!--Intent Tutorial :-->
+    <!--http://www.vogella.com/tutorials/AndroidIntent/article.html#usingintents_call-->
+
+    <!--Miwok :-->
+    <!--https://www.google.jo/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwiZttWCqZrQAhVCJsAKHbTlBaYQFggbMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMiwok&usg=AFQjCNHm7r5tzD5tsk4qLBO-_r4oy_C54Q&sig2=OSeXrNhjNAyekO-0WcJRhg&cad=rjt-->
+
+</resources>

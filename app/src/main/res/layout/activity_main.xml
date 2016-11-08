@@ -13,7 +13,7 @@
         android:id="@+id/numbers"
         android:background="@color/category_numbers"
         android:text="@string/category_numbers"
-        
+
         android:layout_width="match_parent"
         android:layout_height="88dp"
         android:gravity="center"
@@ -39,10 +39,18 @@
         android:text="@string/category_colors" />
 
     <TextView
-        android:id="@+id/phrases"
+    android:id="@+id/phrases"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/category_phrases"
+    android:text="@string/category_phrases" />
+
+
+    <TextView
+        android:id="@+id/miwok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/category_phrases"
-        android:text="@string/category_phrases" />
+        android:background="@color/category_what"
+        android:text="@string/What_miwok" />
 
 </LinearLayout>
