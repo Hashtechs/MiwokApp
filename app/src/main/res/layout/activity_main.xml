@@ -7,50 +7,48 @@
     android:layout_height="match_parent"
     android:background="@color/tan_background"
     android:orientation="vertical"
+    android:visibility="visible"
     tools:context="com.example.android.miwok.MainActivity">
 
     <TextView
         android:id="@+id/numbers"
-        android:background="@color/category_numbers"
-        android:text="@string/category_numbers"
-
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:gravity="center"
-        android:padding="16dp"
-        android:textStyle="bold"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:textColor="@android:color/white"
+        android:text="Number"
+        android:background="@color/category_numbers"
+        style="@style/CategoryStyle"
 
         />
 
     <TextView
         android:id="@+id/family"
+        style="@style/CategoryStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:background="@color/category_family"
-        android:text="@string/category_family" />
+        android:text="@string/category_family"
+
+        />
 
     <TextView
         android:id="@+id/colors"
+        style="@style/CategoryStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:background="@color/category_colors"
-        android:text="@string/category_colors" />
+        android:text="@string/category_colors"/>
 
     <TextView
-    android:id="@+id/phrases"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/category_phrases"
-    android:text="@string/category_phrases" />
+        android:id="@+id/phrases"
+        style="@style/CategoryStyle"
+
+        android:layout_width="match_parent"
+        android:background="@color/category_phrases"
+        android:text="@string/category_phrases"/>
 
 
     <TextView
+        style="@style/CategoryStyle"
         android:id="@+id/miwok"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:background="@color/category_what"
-        android:text="@string/What_miwok" />
+        android:text="@string/What_miwok"/>
 
 </LinearLayout>

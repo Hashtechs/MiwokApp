@@ -28,4 +28,6 @@
     <!-- Miwok :-->
     <!-- https://www.google.jo/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwiZttWCqZrQAhVCJsAKHbTlBaYQFggbMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMiwok&usg=AFQjCNHm7r5tzD5tsk4qLBO-_r4oy_C54Q&sig2=OSeXrNhjNAyekO-0WcJRhg&cad=rjt-->
 
+    <!--onClick Vs OnClickListener -->
+    <!--http://stackoverflow.com/questions/8977212/button-click-listeners-in-android-->
 </resources>
