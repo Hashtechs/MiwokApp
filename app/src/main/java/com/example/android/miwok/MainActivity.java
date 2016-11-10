@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private static final String TAG = "MainActivity";
+
     /**
      * Called when the activity is first created.
      *
@@ -35,10 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initViews();
 
-
+        Log.d(TAG, "onCreate: ");
+        Log.e(TAG, "_________________________________");
     }
 
     /**
@@ -49,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onRestart() {
         super.onRestart();
         Log.i(TAG, "onRestart: ");
+        Log.e(TAG, "_________________________________");
+
     }
 
 
@@ -60,6 +63,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onStart() {
         super.onStart();
         Log.d(TAG, "onStart: ");
+        Log.e(TAG, "_________________________________");
+
     }
 
     /**
@@ -69,7 +74,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onResume() {
         super.onResume();
-        Log.w(TAG, "onResume: " );
+        Log.w(TAG, "onResume: ");
+        Log.e(TAG, "_________________________________");
+
     }
 
     /**
@@ -78,7 +85,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onPause() {
         super.onPause();
-        Log.e(TAG, "onPause: " );
+        Log.e(TAG, "onPause: ");
+        Log.e(TAG, "_________________________________");
+
     }
 
     /**
@@ -88,7 +97,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onStop() {
         super.onStop();
-        Log.v(TAG, "onPause: " );
+        Log.v(TAG, "onPause: ");
+        Log.e(TAG, "_________________________________");
+
 
     }
 
@@ -99,12 +110,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.e(TAG, "onDestroy: ");
+        Log.e(TAG, "_________________________________");
     }
-
-
-
-
-
 
 
     private void initViews() {
@@ -115,7 +123,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textViewColors.setOnClickListener(this);
         miwok.setOnClickListener(this);
     }
-
 
 
     @Override
