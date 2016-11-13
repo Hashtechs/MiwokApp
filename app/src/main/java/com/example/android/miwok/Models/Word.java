@@ -9,10 +9,12 @@ public class Word {
 
     private String mEnglishWord;
     private String mMiwokWord;
+    private int mImgId;
 
-    public Word(String englishWord, String MiwokWord) {
+    public Word(String englishWord, String MiwokWord, int imgId) {
         mEnglishWord = englishWord;
         mMiwokWord = MiwokWord;
+        mImgId = imgId;
     }
 
 
@@ -22,5 +24,9 @@ public class Word {
 
     public String getMiwokWord() {
         return mMiwokWord;
+    }
+
+    public int getImgId() {
+        return mImgId;
     }
 }

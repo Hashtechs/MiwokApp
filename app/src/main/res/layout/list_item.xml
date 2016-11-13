@@ -24,6 +24,7 @@
 
     <ImageView
         android:id="@+id/image"
+        android:src="@drawable/number_one"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
         />
@@ -44,7 +45,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            tools:text="lutti" />
+            android:text="lutti" />
 
         <TextView
             android:id="@+id/default_text_view"
@@ -54,6 +55,6 @@
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            tools:text="one" />
+            android:text="one" />
     </LinearLayout>
 </LinearLayout>

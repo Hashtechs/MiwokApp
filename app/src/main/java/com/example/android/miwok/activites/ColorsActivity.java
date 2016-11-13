@@ -20,12 +20,19 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.android.miwok.R;
 
+import java.util.ArrayList;
+
 public class ColorsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
+
+
+        int [] array = {4,5,6};
+
+        ArrayList<String > arrayList = new ArrayList();
 
         // Create a list of words
 
