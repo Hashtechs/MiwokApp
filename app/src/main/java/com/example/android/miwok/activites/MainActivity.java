@@ -13,14 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.android.miwok.activites;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.android.miwok.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -41,6 +44,65 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.d(TAG, "onCreate: ");
         Log.e(TAG, "_________________________________");
     }
+
+    private void initViews() {
+        TextView textViewFamily  = (TextView) findViewById(R.id.family);
+        TextView textViewColors  = (TextView) findViewById(R.id.colors);
+        TextView textViewNumber  = (TextView) findViewById(R.id.numbers);
+        TextView textViewPhrases = (TextView) findViewById(R.id.phrases);
+        TextView textViewMiwok   = (TextView) findViewById(R.id.miwok);
+
+        textViewFamily .setOnClickListener(this);
+        textViewColors .setOnClickListener(this);
+        textViewNumber .setOnClickListener(this);
+        textViewPhrases.setOnClickListener(this);
+        textViewMiwok  .setOnClickListener(this);
+    }
+
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()) {
+            case R.id.family:
+                goToActivity(this, FamilyActivity.class);
+                break;
+            case R.id.colors:
+                goToActivity(this, ColorsActivity.class);
+                break;
+            case R.id.phrases:
+                goToActivity(this, PhrasesActivity.class);
+                break;
+            case R.id.numbers:
+                goToActivity(this, NumbersActivity.class);
+                break;
+            case R.id.miwok:
+                openBrowser();
+                break;
+
+
+        }
+
+    }
+
+    /**
+     * open system Browser using Implicit Intent
+     */
+    private void openBrowser() {
+//        https://www.google.jo/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwiZttWCqZrQAhVCJsAKHbTlBaYQFggbMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMiwok&usg=AFQjCNHm7r5tzD5tsk4qLBO-_r4oy_C54Q&sig2=OSeXrNhjNAyekO-0WcJRhg&cad=rjt
+
+    }
+
+    /**
+     * method to start another activity
+     * @param context
+     * @param nextActivity
+     */
+    private void goToActivity(Context context, Class<?> nextActivity) {
+        Intent intent = new Intent(this, nextActivity);
+        startActivity(intent);
+    }
+
 
     /**
      * Called after your activity has been stopped, just prior to it being started again.
@@ -97,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onStop() {
         super.onStop();
-        Log.v(TAG, "onPause: ");
+        Log.v(TAG, "onStop: ");
         Log.e(TAG, "_________________________________");
 
 
@@ -114,34 +176,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.e(TAG, "_________________________________");
     }
 
-
-    private void initViews() {
-        TextView textView = (TextView) findViewById(R.id.family);
-        TextView textViewColors = (TextView) findViewById(R.id.colors);
-        TextView miwok = (TextView) findViewById(R.id.miwok);
-        textView.setOnClickListener(this);
-        textViewColors.setOnClickListener(this);
-        miwok.setOnClickListener(this);
-    }
-
-
-    @Override
-    public void onClick(View v) {
-
-        switch (v.getId()) {
-            case R.id.family:
-                Intent intent = new Intent(this, FamilyActivty.class);
-                startActivity(intent);
-                break;
-            case R.id.colors:
-                Intent colors = new Intent(this, ColorsActivity.class);
-                startActivity(colors);
-            case R.id.miwok:
-
-                break;
-
-
-        }
-
-    }
 }
